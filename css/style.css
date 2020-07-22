@@ -1,0 +1,233 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    opacity: 1;
+}
+.video-hero--content {
+    position: relative;
+    text-align: center;
+    color: #FFF;
+    margin: 150px 0;
+}
+.video-hero--content h2 {
+    font-size: 34px;
+    margin: 0 0 10px;
+}
+.video-hero--content p {
+    font-size: 20px;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #666;
+}
+a {
+    text-decoration: none;
+    color: #a46497;
+}
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.page-width {
+    width: 92%;
+    height: 92%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+#header {
+    background: #2c2d33;
+    padding: 2em 0;
+}
+#header a {
+    color: #FFF;
+}
+.title {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+.subtitle {
+    display: block;
+    font-weight: normal;
+    font-size: 15px;
+    color: #959699;
+}
+a:hover .subtitle {
+    color: #FFF;
+}
+#site-title {
+    float: left;
+    margin: 0;
+}
+#content {
+    padding: 40px 0;
+}
+
+
+/* CSS from jQuery Background Video plugin */
+/**
+ * Set default positioning as a fallback for if the plugin fails
+ */
+.jquery-background-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+.jquery-background-video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+/**
+ * Fade in videos
+ * Note the .js class - so non js users still
+ * see the video
+ */
+.js .jquery-background-video {
+    opacity: 0;
+    -webkit-transition: opacity 300ms linear;
+    transition: opacity 300ms linear;
+}
+.js .jquery-background-video.is-visible {
+    opacity: 1;
+}
+
+/**
+ * Pause/play button
+ */
+.jquery-background-video-pauseplay {
+    position: absolute;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    width: 20px;
+    height: 20px;
+    top: 15px;
+    right: 15px;
+    padding: 0;
+    cursor: pointer;
+    outline: none !important;
+}
+.jquery-background-video-pauseplay span {
+    display: none;
+}
+.jquery-background-video-pauseplay:after,
+.jquery-background-video-pauseplay:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.jquery-background-video-pauseplay.play:before {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #FFF;
+}
+.jquery-background-video-pauseplay.pause:before,
+.jquery-background-video-pauseplay.pause:after {
+    border-top: 10px solid #FFF;
+    border-bottom: 10px solid #FFF;
+    border-left: 5px solid #FFF;
+}
+.jquery-background-video-pauseplay.pause:after {
+    left: 10px;
+}
+.sem {
+    padding: 1px;
+    background: #040269;
+    opacity: 0.7;
+    filter: alpha(Opacity=70);
+}
+.blc-0 {
+    margin: 30px;
+    padding: 15px 5px;
+}
+.blc-1 {
+    margin: 30px 30px;
+    padding: 15px 5px;
+}
+.blc-2 {
+    margin: 30px 30px 30px;
+    padding: 15px 5px;
+    background:rgba(224, 101, 101, 0.57);
+}
+.lft {
+    margin: 0 0 5px 5px; /* Отступы вокруг фотографии */
+    padding: 15px 100px;
+}
+.title {
+    color: #c45454;
+    font-weight: 100;
+    font-size: 40px;
+}
+.price {
+    color: #fff;
+    float: left!important;
+    font-weight: 100;
+    font-size: 40px;
+}
+.countdown-title {
+    color: #c45454;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.countdown {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+.countdown-number {
+    padding: 10px;
+    border-radius: 3px;
+    background: #c45454;
+    display: inline-block;
+}
+
+.countdown-time {
+    padding: 15px;
+    border-radius: 3px;
+    background: #bf2222;
+    display: inline-block;
+}
+
+.countdown-text {
+    display: block;
+    padding-top: 5px;
+    font-size: 16px;
+}
